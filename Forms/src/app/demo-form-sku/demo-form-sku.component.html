@@ -1,0 +1,23 @@
+<div class="container p-3 mb-2 bg-dark text-white">
+<h2>Demo Form: Sku </h2>
+
+<form #f = "ngForm"
+        (ngSubmit) = "onSubmit(f.value)"
+>
+    <div class="form-group">
+        <label for="skuInput">SKU</label>
+        <input type="text" id="skuInput" placeholder="SKU" name="sku" class="form-control"
+        ngModel >
+    </div>
+
+    <div class="form-group">
+        <label for="emailInput">E-Mail</label>
+        <input type="email" id="emailInput" placeholder="EMAIL" name="email" class="form-control"
+        ngModel >
+    </div>
+
+    <button type="submit" class="btn btn-primary"> Submit </button>
+</form>
+
+
+</div>
